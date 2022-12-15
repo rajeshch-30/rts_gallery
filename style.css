@@ -2760,9 +2760,14 @@ body {
         padding-top: 80px;
     }
 
+    #cheeml {
+      /* background-position: bottom; */
+      grid-row: span 2;
+  }
+
     #cheeml:hover {
         background-position: bottom;
-        grid-row: span 2;
+        /* grid-row: span 2; */
     }
 }
 
