@@ -2665,6 +2665,7 @@ body {
 .intro audio {
     margin-top: 20px;
     padding-block: 10px;
+    justify-content: center;
 }
 
 .gallery {
@@ -2731,12 +2732,13 @@ body {
 }
 
 /* media queries width less than 640px */
-@media screen and (max-width:640px) {
+@media screen and (max-width:640px)  {
     .container {
         height: 270vh;
         flex-direction: column;
         padding-block: 20px;
     }
+
 
     .gallery {
         width: 90vw;
@@ -2747,6 +2749,12 @@ body {
         grid-column: span 3;
         grid-row: span 1;
     }
+
+    .intro audio{
+      margin-top: 40px;
+    }
+
+    
 
     #night {
         grid-column: span 3;
@@ -2769,7 +2777,23 @@ body {
         background-position: bottom;
         /* grid-row: span 2; */
     }
+
+    @media screen and (min-height:750px){
+      .container {
+        height: 220vh;
+    }
+    }
+
+    
+    @media screen and (min-height:864px){
+      .container {
+        height: 210vh;
+    }
+    }
 }
+
+
+
 
 
 .intro h1 {
